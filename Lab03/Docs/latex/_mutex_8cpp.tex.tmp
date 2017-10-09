@@ -1,0 +1,51 @@
+\hypertarget{_mutex_8cpp}{}\section{Mutex.\+cpp File Reference}
+\label{_mutex_8cpp}\index{Mutex.\+cpp@{Mutex.\+cpp}}
+{\ttfamily \#include \char`\"{}Semaphore.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$thread$>$}\\*
+Include dependency graph for Mutex.\+cpp\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_mutex_8cpp_a1b2b599e813718a52e92849734f20181}{task\+One} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_semaphore}{Semaphore} $>$ mutex)
+\item 
+void \hyperlink{_mutex_8cpp_ac6ab365d39a58d49a601652e41d0b1ea}{task\+Two} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_semaphore}{Semaphore} $>$ mutex)
+\item 
+int \hyperlink{_mutex_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_mutex_8cpp_a617a47c70795bcff659815ad0efd2266}{counter} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{Mutex.\+cpp@{Mutex.\+cpp}!main@{main}}
+\index{main@{main}!Mutex.\+cpp@{Mutex.\+cpp}}
+\subsubsection[{\texorpdfstring{main(void)}{main(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_mutex_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{}\label{_mutex_8cpp_a840291bc02cba5474a4cb46a9b9566fe}
+$<$ Launch the threads \index{Mutex.\+cpp@{Mutex.\+cpp}!task\+One@{task\+One}}
+\index{task\+One@{task\+One}!Mutex.\+cpp@{Mutex.\+cpp}}
+\subsubsection[{\texorpdfstring{task\+One(std\+::shared\+\_\+ptr$<$ Semaphore $>$ mutex)}{taskOne(std::shared_ptr< Semaphore > mutex)}}]{\setlength{\rightskip}{0pt plus 5cm}void task\+One (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Semaphore} $>$}]{mutex}
+\end{DoxyParamCaption}
+)}\hypertarget{_mutex_8cpp_a1b2b599e813718a52e92849734f20181}{}\label{_mutex_8cpp_a1b2b599e813718a52e92849734f20181}
+\index{Mutex.\+cpp@{Mutex.\+cpp}!task\+Two@{task\+Two}}
+\index{task\+Two@{task\+Two}!Mutex.\+cpp@{Mutex.\+cpp}}
+\subsubsection[{\texorpdfstring{task\+Two(std\+::shared\+\_\+ptr$<$ Semaphore $>$ mutex)}{taskTwo(std::shared_ptr< Semaphore > mutex)}}]{\setlength{\rightskip}{0pt plus 5cm}void task\+Two (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Semaphore} $>$}]{mutex}
+\end{DoxyParamCaption}
+)}\hypertarget{_mutex_8cpp_ac6ab365d39a58d49a601652e41d0b1ea}{}\label{_mutex_8cpp_ac6ab365d39a58d49a601652e41d0b1ea}
+
+
+\subsection{Variable Documentation}
+\index{Mutex.\+cpp@{Mutex.\+cpp}!counter@{counter}}
+\index{counter@{counter}!Mutex.\+cpp@{Mutex.\+cpp}}
+\subsubsection[{\texorpdfstring{counter}{counter}}]{\setlength{\rightskip}{0pt plus 5cm}int counter = 0}\hypertarget{_mutex_8cpp_a617a47c70795bcff659815ad0efd2266}{}\label{_mutex_8cpp_a617a47c70795bcff659815ad0efd2266}
