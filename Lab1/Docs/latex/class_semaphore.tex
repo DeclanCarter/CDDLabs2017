@@ -1,8 +1,8 @@
-\section{Semaphore Class Reference}
+\hypertarget{class_semaphore}{}\section{Semaphore Class Reference}
 \label{class_semaphore}\index{Semaphore@{Semaphore}}
 
 
-A \doxyref{Semaphore}{p.}{class_semaphore} Implementation.  
+A \hyperlink{class_semaphore}{Semaphore} Implementation.  
 
 
 
@@ -12,83 +12,47 @@ A \doxyref{Semaphore}{p.}{class_semaphore} Implementation.
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf Semaphore} (unsigned int ui\+Count=0)
+\hyperlink{class_semaphore_a0d9290d316636875ca85d1d78950a817}{Semaphore} (unsigned int ui\+Count=0)
 \item 
-void {\bf Wait} ()
+void \hyperlink{class_semaphore_a72aabebf026e3a8b1f3e4d0fa8ee1eda}{Wait} ()
 \item 
-void {\bf Signal} ()
+void \hyperlink{class_semaphore_a86f92f738b4486439b296d8e235895f2}{Signal} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-A \doxyref{Semaphore}{p.}{class_semaphore} Implementation. 
+A \hyperlink{class_semaphore}{Semaphore} Implementation. 
 
-Uses C++11 features such as mutex and condition variables to implement \doxyref{Semaphore}{p.}{class_semaphore} 
-
-Definition at line 10 of file Semaphore.\+h.
-
-
+Uses C++11 features such as mutex and condition variables to implement \hyperlink{class_semaphore}{Semaphore} 
 
 \subsection{Constructor \& Destructor Documentation}
 \index{Semaphore@{Semaphore}!Semaphore@{Semaphore}}
 \index{Semaphore@{Semaphore}!Semaphore@{Semaphore}}
-\subsubsection[{Semaphore(unsigned int ui\+Count=0)}]{\setlength{\rightskip}{0pt plus 5cm}Semaphore\+::\+Semaphore (
+\subsubsection[{\texorpdfstring{Semaphore(unsigned int ui\+Count=0)}{Semaphore(unsigned int uiCount=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Semaphore\+::\+Semaphore (
 \begin{DoxyParamCaption}
 \item[{unsigned int}]{ui\+Count = {\ttfamily 0}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_semaphore_a0d9290d316636875ca85d1d78950a817}
-
-
-Definition at line 18 of file Semaphore.\+h.
-
-
-\begin{DoxyCode}
-19           : m\_uiCount(uiCount) \{ \};
-\end{DoxyCode}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_semaphore_a0d9290d316636875ca85d1d78950a817}{}\label{class_semaphore_a0d9290d316636875ca85d1d78950a817}
 
 
 \subsection{Member Function Documentation}
 \index{Semaphore@{Semaphore}!Signal@{Signal}}
 \index{Signal@{Signal}!Semaphore@{Semaphore}}
-\subsubsection[{Signal()}]{\setlength{\rightskip}{0pt plus 5cm}void Semaphore\+::\+Signal (
+\subsubsection[{\texorpdfstring{Signal()}{Signal()}}]{\setlength{\rightskip}{0pt plus 5cm}void Semaphore\+::\+Signal (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{class_semaphore_a86f92f738b4486439b296d8e235895f2}
-
-
-Definition at line 20 of file Semaphore.\+cpp.
-
-
-\begin{DoxyCode}
-21 \{
-22       std::unique\_lock< std::mutex > lock(m\_mutex);
-23       ++m\_uiCount;
-24       m\_condition.notify\_one();
-25 \}
-\end{DoxyCode}
+)}\hypertarget{class_semaphore_a86f92f738b4486439b296d8e235895f2}{}\label{class_semaphore_a86f92f738b4486439b296d8e235895f2}
 \index{Semaphore@{Semaphore}!Wait@{Wait}}
 \index{Wait@{Wait}!Semaphore@{Semaphore}}
-\subsubsection[{Wait()}]{\setlength{\rightskip}{0pt plus 5cm}void Semaphore\+::\+Wait (
+\subsubsection[{\texorpdfstring{Wait()}{Wait()}}]{\setlength{\rightskip}{0pt plus 5cm}void Semaphore\+::\+Wait (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{class_semaphore_a72aabebf026e3a8b1f3e4d0fa8ee1eda}
-
-
-Definition at line 12 of file Semaphore.\+cpp.
-
-
-\begin{DoxyCode}
-13 \{
-14       std::unique\_lock< std::mutex > lock(m\_mutex);
-15       m\_condition.wait(lock,[&]()->\textcolor{keywordtype}{bool}\{ \textcolor{keywordflow}{return} m\_uiCount>0; \});
-16       --m\_uiCount;
-17 \}
-\end{DoxyCode}
+)}\hypertarget{class_semaphore_a72aabebf026e3a8b1f3e4d0fa8ee1eda}{}\label{class_semaphore_a72aabebf026e3a8b1f3e4d0fa8ee1eda}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-{\bf Semaphore.\+h}\item 
-{\bf Semaphore.\+cpp}\end{DoxyCompactItemize}
+\hyperlink{_semaphore_8h}{Semaphore.\+h}\item 
+\hyperlink{_semaphore_8cpp}{Semaphore.\+cpp}\end{DoxyCompactItemize}
