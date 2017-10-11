@@ -1,3 +1,14 @@
+/*! *Arthur: Declan Carter
+ *Date Created: 6/10/17
+ *Latest update: 11/10/17
+ *Version 1.0.0
+ *Copyright: MIT License
+ 
+*Two threads running with Semaphores that signal one to proceed while the other is signalled to wait for the first one to finish
+
+*/
+
+
 #include "Semaphore.h"
 #include <iostream>
 #include <thread>

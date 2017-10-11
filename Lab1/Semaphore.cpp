@@ -1,12 +1,14 @@
-#include "Semaphore.h"
-/*! \class Semaphore
-    \brief A Semaphore Implementation
-
-   Uses C++11 features such as mutex and condition variables to implement Semaphore
+/*! *Arthur: Declan Carter
+ *Date Created: 6/10/17
+ *Latest update: 11/10/17
+ *Version 1.0.0
+ *Copyright: MIT License
+ 
+*Uses C++11 features such as mutex and condition variables to implement Semaphore
 
 */
 
-
+#include "Semaphore.h"
 
 
 void Semaphore::Wait()

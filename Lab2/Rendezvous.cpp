@@ -1,4 +1,10 @@
-/*! A1 will print out first, B1 will print before A2 and B2 will print last.
+/*! *Arthur: Declan Carter
+ *Date Created: 6/10/17
+ *Latest update: 11/10/17
+ *Version 1.0.0
+ *Copyright: MIT License
+ 
+ *Using semaphores to schedule when threads proceed. Thread A1 will print out first, Thread B1 will print before Thread A2 and Thread B2 will print last.
  */
 
 #include "Semaphore.h"
